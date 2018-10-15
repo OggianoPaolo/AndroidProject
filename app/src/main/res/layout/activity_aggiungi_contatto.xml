@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81sp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0sp"
+        android:layout_height="140sp"
+        android:background="@color/blue_100"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- casella Immagine -->
+        <ImageButton
+            android:contentDescription="@string/cancelbutton"
+            android:id="@+id/annullaButton"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/casellaImmagine"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15sp"
+            android:layout_marginStart="15sp"
+            android:contentDescription="@string/imgcontatto"
+            android:cropToPadding="true"
+            android:src="@drawable/ico_android" />
+
+        <ImageButton
+            android:id="@+id/salvaButton"
+            android:contentDescription="@string/savebutton"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/annullaButton"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="65dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_done" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:background="@color/grey_50"
+        android:layout_marginBottom="74sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:id="@+id/layoutCampi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:layout_marginTop="8sp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <!-- casella Nome -->
+            <EditText
+                android:id="@+id/casellaNome"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/nomedelcontattoHint"
+                android:inputType="textCapWords"
+                android:paddingStart="25sp"
+                android:textColor="@color/grey_700" />
+
+            <!-- casella Cognome -->
+            <EditText
+                android:id="@+id/casellaCognome"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/cognomedelcontattoHint"
+                android:inputType="textCapWords"
+                android:paddingStart="25sp"
+                android:textColor="@color/grey_700" />
+
+            <!-- casella Numero -->
+            <EditText
+                android:id="@+id/casellaNumero"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/numerodelcontattoHint"
+                android:inputType="phone"
+                android:paddingStart="25sp"
+                android:textColor="@color/grey_700" />
+
+            <!-- casella Indirizzo -->
+            <EditText
+                android:id="@+id/casellaIndirizzo"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/indirizzodelcontattoHint"
+                android:inputType="textPostalAddress"
+                android:paddingStart="25sp"
+                android:textColor="@color/grey_700" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0sp"
+        android:layout_height="62sp"
+        android:layout_marginBottom="8sp"
+        android:layout_marginTop="8sp"
+        android:background="@color/grey_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <Button
+            android:id="@+id/nuovoCampoButton"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/gradient_button"
+            android:text="@string/aggiungiNuovoCampo" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

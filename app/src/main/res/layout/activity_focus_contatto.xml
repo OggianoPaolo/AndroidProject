@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_focus_contatto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81sp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0sp"
+        android:layout_height="139sp"
+        android:background="@color/blue_100"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- casella Immagine -->
+        <ImageView
+            android:id="@+id/detailsImmagine"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15sp"
+            android:layout_marginStart="15sp"
+            android:contentDescription="@string/imgcontatto"
+            android:src="@drawable/ico_android" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_marginBottom="74sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:id="@+id/layoutCampi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:layout_marginTop="8sp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <!-- casella Nome -->
+            <TextView
+                android:id="@+id/detailsNome"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/nomedelcontattoHint"
+                android:paddingStart="25sp"
+                android:paddingTop="10sp"
+                android:textSize="20sp"
+                android:textColor="@color/grey_700" />
+
+            <!-- casella Cognome -->
+            <TextView
+                android:id="@+id/detailsCognome"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/gradient_fields"
+                android:hint="@string/cognomedelcontattoHint"
+                android:paddingStart="25sp"
+                android:paddingTop="10sp"
+                android:textSize="20sp"
+                android:textColor="@color/grey_700" />
+
+            <!-- casella Numero -->
+            <LinearLayout
+                android:id="@+id/campoNumero"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detailsNumero"
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/gradient_fields"
+                    android:hint="@string/numerodelcontattoHint"
+                    android:textColor="@color/grey_700"
+                    android:textSize="20sp"
+                    android:paddingStart="25sp"
+                    android:paddingTop="10sp"/>
+
+                <ImageButton
+                    android:id="@+id/telefonoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorWhite"
+                    android:contentDescription="@string/iconatelefono"
+                    app:srcCompat="@android:drawable/sym_action_call" />
+
+            </LinearLayout>
+
+            <!-- casella Indirizzo -->
+            <LinearLayout
+                android:id="@+id/campoIndirizzo"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detailsIndirizzo"
+                    android:layout_width="300sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/gradient_fields"
+                    android:hint="@string/indirizzodelcontattoHint"
+                    android:paddingStart="25sp"
+                    android:paddingTop="10sp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/luogoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_place_green_24sp"
+                    android:contentDescription="@string/iconamarker" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

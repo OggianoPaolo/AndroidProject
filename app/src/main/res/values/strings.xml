@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Didacus</string>
+
+    <string name="aggiorna">Aggiorna</string>
+    <string name="annulla">Annulla</string>
+    <string name="salva">Salva</string>
+    <string name="indietro">Indietro</string>
+
+    <string name="imgcontatto">Immagine</string>
+    <string name="nomedelcontattoHint">Nome</string>
+    <string name="cognomedelcontattoHint">Cognome</string>
+    <string name="numerodelcontattoHint">Numero</string>
+    <string name="indirizzodelcontattoHint">Indirizzo</string>
+
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="numero">Numero</string>
+    <string name="indirizzo">Indirizzo</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="aggiungiNuovoCampo">Aggiungi nuovo campo</string>
+    <string name="savebutton">SaveButton</string>
+    <string name="cancelbutton">cancelButton</string>
+    <string name="iconatelefono">iconaTelefono</string>
+    <string name="iconamarker">iconaMarker</string>
+</resources>
