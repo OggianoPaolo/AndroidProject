@@ -12,4 +12,4 @@ Example of Android project
 <img src="https://user-images.githubusercontent.com/44165021/46955902-51bedc00-d094-11e8-9396-79f5f3b3f520.jpeg" width="200" height="400"> <img src="https://user-images.githubusercontent.com/44165021/46955906-52577280-d094-11e8-9bf4-4c568229d041.jpeg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/44165021/46955904-51bedc00-d094-11e8-98ea-c27e35862848.jpeg" width="200" height="400">
 
 Application developed in italian language.
-L'applicazione è sviluppata in italiano.
+Applicazione sviluppata in italiano.
